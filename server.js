@@ -29,7 +29,7 @@ app.get("/api/whoami", function(req, res){
   const ip = req.ip;
   const lang = req.headers["accept-language"];
   const host = req.get('User-Agent')
-  res.json({ipadress:ip, language:lang, software:host})
+  res.json({ipaddress:ip, language:lang, software:host})
 })
 
 // listen for requests :)
